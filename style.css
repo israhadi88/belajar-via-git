@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  /* Menggunakan Flexbox untuk mengetengahkan seluruh konten di body */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .main-container {
   max-width: 500px;
   background-color: white;
@@ -15,4 +27,27 @@
   display: flex;
   flex-direction: column;
   align-items: center; /* Mengetengahkan isi di dalam container */
+  margin-bottom: 20px; /* Memberikan jarak antara form dan footer */
+}
+
+.secondary-container {
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Mengetengahkan isi di dalam container */
+  gap: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888;
 }
