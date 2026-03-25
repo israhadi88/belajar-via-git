@@ -82,29 +82,86 @@
 
 //learn object
 
-const book = {
-  title: "Kalibree",
-  Author: "Mahuina",
-  Year: 2026,
-  Publisher: "Intermedia",
-};
+//const book = {
+//  title: "Kalibree",
+//  Author: "Mahuina",
+//  Year: 2026,
+//  Publisher: "Intermedia",
+//};
 
-console.log(`Judul Buku: ${book.title}`);
-console.log(`Penulis: ${book.Author}`);
-console.log(`Tahun Terbit: ${book.Year}`);
-console.log(`Penerbit: ${book.Publisher}`);
+//console.log(`Judul Buku: ${book.title}`);
+//console.log(`Penulis: ${book.Author}`);
+//console.log(`Tahun Terbit: ${book.Year}`);
+//console.log(`Penerbit: ${book.Publisher}`);
 
-const person = {
-  name: "Mahuina",
-  age: 30,
-  city: "Depok",
-};
+//const person = {
+//  name: "Mahuina",
+//  age: 30,
+//  city: "Depok",
+//};
 
-const greeting =
-  person.name +
-  " adalah seorang yang berusia " +
-  person.age +
-  " tahun dan tinggal di " +
-  person.city +
-  ".";
-console.log(greeting);
+//const greeting =
+//  person.name +
+//  " adalah seorang yang berusia " +
+//  person.age +
+//  " tahun dan tinggal di " +
+//  person.city +
+//  ".";
+//console.log(greeting);
+
+//Lesson 13. Arrays
+
+//const avengers = [
+//  "Iron Man",
+//  "Captain America",
+//  "Thor",
+//  "Black Widow",
+//  "Hulk",
+//  "Hawkeye",
+//];
+
+//for (let i = 0; i < avengers.length; i++) {
+//  console.log(`Anggota Avengers ke: ${i + 1} ${avengers[i]}`);
+//}
+//console.log(`Jumalah Anggota Avengers: ${avengers.length}`);
+//console.log(`Seluruh Anggota Avengers: ${avengers.join(", ")}`);
+
+//// Challenge: Arrays only
+
+//const usernames = ["yandy", "dimas", "mita"];
+//const hasYandy = usernames.includes("yandy");
+//console.log(`jumalah user: ${usernames.length}`);
+//console.log(
+//  hasYandy ? "Username yandy sudah di gunakan" : "Username yandy tersedia",
+//);
+
+// Lesson 14. Undefined and Null
+
+//let myVariable;
+//console.log(myVariable); // Output: undefined
+//myVariable = null;
+//console.log(myVariable); // Output: null
+
+// 15. Learning Function
+
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+const greetingMessage = greet("Mahuina");
+console.log(greetingMessage);
+
+// function Selamat Ulang Tahun
+
+function selamatUlangTahun(nama, umur) {
+  return `Selamat ulang tahun yang ke-${umur}, ${nama}!`;
+}
+
+const ucapan = selamatUlangTahun("Mahuina", 30);
+console.log(ucapan);
+
+// function with console log
+function selamatPagi(nama) {
+  console.log(`Selamat pagi, ${nama}!`);
+}
+selamatPagi("Mahuina");
+selamatPagi("Israhadi");
